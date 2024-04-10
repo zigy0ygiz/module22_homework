@@ -1,0 +1,11 @@
+.flag {
+    width: 180px;
+    height: 120px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+
+* {
+    background-color: rgb(190, 190, 188);
+}

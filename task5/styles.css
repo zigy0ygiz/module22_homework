@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(203, 202, 204);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+input {
+    all: unset;
+}
+
+button {
+    all: unset;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 50px;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(84, 69, 138);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    color: rgb(15, 1, 66);
+}
+
+.management {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg {
+    background-color: rgb(203, 202, 204);
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 52%;
+    padding: 0 10px;
+}
+
+.msg ::placeholder {
+    color: rgb(141, 140, 141);
+}
+
+.btn {
+    background-color: rgb(203, 202, 204);
+    height: 100%;
+    padding: 0 10px;
+}
+
+.btn:hover {
+    color: rgb(2, 173, 93);
+    font-size: 18px;
+}
+
+.chatBox {
+    background-color: rgb(203, 202, 204);
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.chatText {
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.chatSent {
+    border: 3px dashed rgb(2, 173, 93);
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.chatReceived {
+    border: 3px dashed rgb(184, 150, 1);
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.chatSentHeading {
+    color: rgb(2, 173, 93);
+    font-weight: bold;
+}
+
+.chatReceivedHeading {
+    color: rgb(184, 150, 1);
+    font-weight: bold;
+}
+
+.chatErr {
+    border: 3px dashed rgb(255, 0, 0);
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.chatErrHeading {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
